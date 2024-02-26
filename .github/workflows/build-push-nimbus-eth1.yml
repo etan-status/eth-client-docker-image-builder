@@ -48,7 +48,7 @@ jobs:
           source_repository: ${{ inputs.repository }}
           source_ref: ${{ inputs.ref }}
           target_tag: ${{ inputs.docker_tag || inputs.ref }}-${{ matrix.slug }}
-          target_repository: ethpandaops/nimbus-eth1
+          target_repository: etanstatus/nimbus-eth1
           target_dockerfile: ./nimbus-eth1/Dockerfile
           platform: ${{ matrix.platform }}
 
@@ -68,7 +68,7 @@ jobs:
           source_repository: ${{ inputs.repository }}
           source_ref: ${{ inputs.ref }}
           target_tag: ${{ inputs.docker_tag || inputs.ref }}
-          target_repository: ethpandaops/nimbus-eth1
+          target_repository: etanstatus/nimbus-eth1
           platforms: ${{ needs.prepare.outputs.platforms }}
 
           DOCKER_USERNAME: "${{ vars.DOCKER_USERNAME }}"

@@ -172,14 +172,14 @@
     ref: unstable
   target:
     tag: unstable
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon
 - source:
     repository: status-im/nimbus-eth2
     ref: unstable
   target:
     tag: unstable
-    repository: ethpandaops/nimbus-validator-client
+    repository: etanstatus/nimbus-validator-client
     dockerfile: ./nimbus-eth2/Dockerfile.validator
   # Minimal builds
 - source:
@@ -187,28 +187,28 @@
     ref: unstable
   target:
     tag: unstable-minimal
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon-minimal
 - source:
     repository: status-im/nimbus-eth2
     ref: unstable
   target:
     tag: unstable-minimal
-    repository: ethpandaops/nimbus-validator-client
+    repository: etanstatus/nimbus-validator-client
     dockerfile: ./nimbus-eth2/Dockerfile.validator-minimal
 - source:
     repository: status-im/nimbus-eth2
     ref: stable
   target:
     tag: stable-minimal
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon-minimal
 - source:
     repository: status-im/nimbus-eth2
     ref: stable
   target:
     tag: stable-minimal
-    repository: ethpandaops/nimbus-validator-client
+    repository: etanstatus/nimbus-validator-client
     dockerfile: ./nimbus-eth2/Dockerfile.validator-minimal
   # Stable branch
 - source:
@@ -216,14 +216,14 @@
     ref: stable
   target:
     tag: stable
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon
 - source:
     repository: status-im/nimbus-eth2
     ref: stable
   target:
     tag: stable
-    repository: ethpandaops/nimbus-validator-client
+    repository: etanstatus/nimbus-validator-client
     dockerfile: ./nimbus-eth2/Dockerfile.validator
   # Xatu Sentry builds
 - source:
@@ -232,7 +232,7 @@
   build_script: ./nimbus-eth2/xatu-sentry.sh
   target:
     tag: xatu-sentry
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon
 - source:
     repository: status-im/nimbus-eth2
@@ -240,7 +240,7 @@
   build_script: ./nimbus-eth2/xatu-sentry.sh
   target:
     tag: xatu-sentry-unstable
-    repository: ethpandaops/nimbus-eth2
+    repository: etanstatus/nimbus-eth2
     dockerfile: ./nimbus-eth2/Dockerfile.beacon
 ###############
 # nimbus-eth1 #
@@ -250,7 +250,7 @@
     ref: master
   target:
     tag: master
-    repository: ethpandaops/nimbus-eth1
+    repository: etanstatus/nimbus-eth1
     dockerfile: ./nimbus-eth1/Dockerfile
 #########
 # prysm #
